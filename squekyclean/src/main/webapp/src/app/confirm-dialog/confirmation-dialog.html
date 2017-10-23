@@ -1,0 +1,9 @@
+<h1 md-dialog-title>SquekyClean</h1>
+<div md-dialog-content>{{confirmMessage}}</div>
+<div md-dialog-actions>
+    <input type="text" class="form-control" placeholder="Thread name..." required [(ngModel)]="val" />
+    <br/>
+    <br/>
+    <button md-button style="color: #fff;background-color: #153961;" (click)="dialogRef.close(true)">Confirm</button>
+    <button md-button (click)="dialogRef.close(false)">Cancel</button>
+</div>

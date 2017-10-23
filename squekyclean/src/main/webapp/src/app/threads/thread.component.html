@@ -1,0 +1,22 @@
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{thread?.threadName}}</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" placeholder="Post content..." required [(ngModel)]="postContent" />
+                    </div>
+                    <div class="col-sm-1">
+                        <button (click)="post()" class="btn btn-default">Post</button>
+                    </div>
+                </div>
+
+            </div>
+            <ul class="list-group">
+                <post *ngFor="let p of posts" [post]="p"></post>
+            </ul>
+        </div>
+   
+    <div class="col-md-1"> <button class="btn btn-default" (click)="subscribe()">Subscribe</button></div>

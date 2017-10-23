@@ -1,0 +1,7 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Threads <span (click)="createNewThread()" class="glyphicon glyphicon-plus pull-right"></span></div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li *ngFor="let thread of threads" class="list-group-item"><a routerLink="/thread/{{thread.id}}">{{thread.threadName}}</a></li>
+        </ul>
+    </div>
